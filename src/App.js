@@ -9,7 +9,7 @@ const App = () => {
         <p className="text-gray-700">This is an example of using Tailwind CSS in a React App.</p>
         <div className="mt-6">
           <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
-            Click Me
+            click me
           </button>
         </div>
       </div>
