@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Roadmap from "./Roadmap";
 
 const navlinks = [
   {
@@ -8,11 +9,11 @@ const navlinks = [
   },
   {
     title: "Department",
-    link: "/Department,",
+    link: { Roadmap },
   },
   {
     title: "Resources",
-    link: "/Resources,",
+    link: "/Department,",
   },
   {
     title: "Contact Us",
@@ -27,7 +28,7 @@ const Navbar = () => {
     console.log(open);
   };
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-700">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-centre justify-between py-2 h-16">
           <div className="flex item-centre">
