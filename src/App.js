@@ -1,12 +1,10 @@
 import React from "react";
-import Roadmap from "./components/Roadmap";
-import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Roadmap />
+      <Homepage />
     </div>
   );
 }

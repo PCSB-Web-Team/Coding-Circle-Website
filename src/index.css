@@ -4,3 +4,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.neon-border {
+  animation: neon-border 1.5s alternate infinite;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(45deg, rgb(164, 232, 100), #9f6, rgb(164, 232, 100), #9f6);
+}
+
+
+.neon-text {
+  animation: neon-text 1.5s alternate infinite;
+  color: #21fa21;
+  /* Neon green color */
+}
+
+/* comp.css */
+
+/* Neon effect for the border */
+.neon-border {
+  animation: neon-border 1.5s alternate infinite;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(45deg, rgb(164, 232, 100), #9f6, rgb(164, 232, 100), #9f6);
+}
+
+/* Neon effect for the text */
+.neon-text {
+  animation: neon-text 1.5s alternate infinite;
+  color: #00ff00;
+  /* Neon green color */
+}
+
+/* Animation for border */
+@keyframes neon-border {
+  0% {
+    border-image-source: linear-gradient(45deg, rgb(212, 239, 199), #9f6, rgb(212, 239, 199), #9f6);
+  }
+
+  100% {
+    border-image-source: linear-gradient(45deg, #9f6, rgb(212, 239, 199), #9f6, rgb(212, 239, 199));
+  }
+}
+
+/* Animation for text */
+@keyframes neon-text {
+  0% {
+    color: #00ff00;
+    /* Neon green color */
+  }
+
+  100% {
+    color: #33ff33;
+    /* Slightly different green color */
+  }
+}
+
+/* Center year statement */
+
+/* Center year statement with padding and background */
+.mb-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+  padding: 8px;
+  /* Add padding for spacing */
+  background-color: #20232a;
+  /* Add a background color for contrast */
+  border-radius: 5px;
+  /* Add rounded corners for a card-like appearance */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for depth */
+  margin-left: 30px;
+  margin-right: 30px;
+}

@@ -1,61 +1,101 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Roadmap from "./Roadmap";
+
 
 const navlinks = [
   {
     title: "Home",
-    link: "/Home,",
+    link: "/home",
   },
   {
-    title: "Department",
-    link: { Roadmap },
+    title: "Roadmap",
+    sublinks: [
+      {
+        title: "Computer",
+        link: "../pages/Roadmap/Comp.js",
+      },
+      {
+        title: "IT",
+        link: "../pages/Roadmap/it.js",
+      },
+      {
+        title: "Electronics and Telecommunication",
+        link: "../pages/Roadmap/Entc.js",
+      },
+    ],
   },
   {
     title: "Resources",
-    link: "/Department,",
+    link: "/resources",
   },
   {
     title: "Contact Us",
-    link: "/Contact Us,",
+    link: "/contact",
   },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   const handleMenu = () => {
     setOpen((prev) => !prev);
-    console.log(open);
   };
+
   return (
     <div className="bg-gray-700">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-centre justify-between py-2 h-16">
-          <div className="flex item-centre">
+        <div className="flex items-center justify-between py-2 h-16">
+          <div className="flex items-center">
             <a href="/" className="text-white py-3 hover:scale-110">
               CODING CIRCLE
             </a>
           </div>
-          {/*navlinks */}
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navlinks.map((link, index) => (
-                <a
+                <div
                   key={index}
-                  className="text-gray-400 transistion-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  href={link.link}
+                  className="relative group"
                 >
-                  {link.title}
-                </a>
+                  {link.sublinks ? (
+                    <>
+                      <button
+                        className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium focus:outline-none"
+                      >
+                        {link.title}
+                      </button>
+                      <div className="absolute hidden group-hover:block bg-gray-700 py-2 w-48 rounded-md shadow-lg">
+                        {link.sublinks.map((sublink, subindex) => (
+                          <a
+                            key={subindex}
+                            href={sublink.link}
+                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 rounded-md"
+                          >
+                            {sublink.title}
+                          </a>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <a
+                      className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                      href={link.link}
+                      key={index}
+                    >
+                      {link.title}
+                    </a>
+                  )}
+                </div>
               ))}
             </div>
           </div>
-          {/*hamburger button */}
+
           <div className="-mr-2 flex md:hidden">
             <button
               type="button"
               onClick={handleMenu}
-              className="inline-flex items-centre justify-centre p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               <span className="sr-only">open main menu</span>
               {open === true ? <FaTimes /> : <FaBars />}
@@ -63,7 +103,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* mobile menu */}
+
       {open ? (
         <div className="md:hidden">
           <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
