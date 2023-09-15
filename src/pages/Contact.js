@@ -1,4 +1,3 @@
-
 import React from "react";
 import Card from "../components/Cards";
 import img1 from "../assets/images/Tanisha.jpg";
@@ -35,12 +34,15 @@ const Contact = () => {
   ];
 
   return (
-    <div className="flex flex-wrap overflow-x-hidden bg-gray-800">
-      {cardData.map((card, index) => (
-        <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-2">
-          <Card {...card} />
-        </div>
-      ))}
+    <div className="p-4 bg-gray-800">
+      <h1 className="text-4xl text-center font-bold text-white p-10">Heads</h1>
+      <div className="flex flex-wrap overflow-x-hidden bg-gray-800 py-2">
+        {cardData.map((card, index) => (
+          <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-2">
+            <Card {...card} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ function It() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-800">
       <div className="w-full p-6 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold mb-9 text-center text-green-400">
+        <h1 className="text-3xl font-bold mb-9 text-center text-cyan-400">
           Information Technology Department
         </h1>
         <hr className="border-t border-gray-100 mb-16 mx-auto w-1/2" />
@@ -24,7 +24,7 @@ function It() {
         {timelineIt.map((yearData) => (
           <div
             key={yearData.year}
-            className={`mb-6 pl-4 pr-4 border-l-4 border-r-4 border-transparent ${expandedYear === yearData.year ? "neon-border" : ""
+            className={`mb-6 pl-4 pr-4 border-l-4 border-r-4 border-transparent  shadow-lg shadow-cyan-800 ${expandedYear === yearData.year ? "neon-border" : ""
               }`}
           >
             <div
@@ -34,7 +34,7 @@ function It() {
             >
               <h2
                 className={`text-xl font-bold mb-2 ${expandedYear === yearData.year
-                  ? "text-green-300"
+                  ? "text-cyan-300"
                   : "text-white"
                   }`}
               >
@@ -44,7 +44,7 @@ function It() {
                 {expandedYear === yearData.year ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-500"
+                    className="h-6 w-6 text-cyan-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -59,7 +59,7 @@ function It() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-500"
+                    className="h-6 w-6 text-cyan-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

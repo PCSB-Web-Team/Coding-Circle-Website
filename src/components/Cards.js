@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card(props) {
   return (
-    <div className="max-w-xs mx-auto bg-gray-900 shadow-md rounded-lg overflow-hidden transition-transform hover:scale-105 hover:shadow-lg h-96">
+    <div className="max-w-xs mx-auto bg-gray-900 shadow-md rounded-lg overflow-hidden transition-transform hover:scale-105 hover:shadow-lg h-96 my-2">
       <div
         className="w-full h-64 bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${props.imageSrc})` }}

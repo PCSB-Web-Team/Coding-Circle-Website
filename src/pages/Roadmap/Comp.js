@@ -17,7 +17,7 @@ function Comp() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-800">
       <div className="w-full p-6 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold mb-9 text-center text-green-400">
+        <h1 className="text-3xl font-bold mb-9 text-center text-cyan-400">
           Computer Department
         </h1>
         <hr className="border-t border-gray-100 mb-16 mx-auto w-1/2" />
@@ -25,7 +25,7 @@ function Comp() {
         {timelinecomp.map((yearData) => (
           <div
             key={yearData.year}
-            className={`mb-6 pl-4 pr-4 border-l-4 border-r-4 border-transparent ${expandedYear === yearData.year ? "neon-border" : ""
+            className={`mb-6 pl-4 pr-4 border-l-4 border-r-4 border-transparent shadow-lg shadow-cyan-800 ${expandedYear === yearData.year ? "neon-border" : ""
               }`}
           >
             <div
@@ -35,7 +35,7 @@ function Comp() {
             >
               <h2
                 className={`text-xl font-bold mb-2 ${expandedYear === yearData.year
-                  ? "text-green-300"
+                  ? "text-cyan-300"
                   : "text-white"
                   }`}
               >
@@ -45,7 +45,7 @@ function Comp() {
                 {expandedYear === yearData.year ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-500"
+                    className="h-6 w-6 text-cyan-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -60,7 +60,7 @@ function Comp() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-500"
+                    className="h-6 w-6 text-cyan-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -80,7 +80,7 @@ function Comp() {
                 <ul className="list-disc pl-6"> {/* Use a <ul> element with list-disc style for bullet points */}
                   {yearData.events.map((event, index) => (
                     <li key={index} className="mb-3">
-                      <h3 className="text-lg font-semibold text-green-500 mb-1">
+                      <h3 className="text-lg font-semibold text-cyan-500 mb-1">
                         <u>{event.title}</u> {/* Add <u> tag for underlining */}
                       </h3>
                       <p>{event.description}</p>
