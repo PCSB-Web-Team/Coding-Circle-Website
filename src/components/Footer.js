@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-5 text-center font-montserrat">
-      <p>&copy; {new Date().getFullYear()} PICT CSI Student branch. Design and Developed By PCSB Web Team</p>
+    <footer className="bg-gray-900 text-white text-center py-8">
+      <p>&copy; 2023 Coding Circle. All rights reserved.</p>
     </footer>
   );
-};
-
-export default Footer;
+}

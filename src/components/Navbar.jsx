@@ -1,36 +1,22 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-
 const navlinks = [
   {
     title: "Home",
-    link: "/home",
+    link: "/",
   },
   {
-    title: "Roadmap",
-    sublinks: [
-      {
-        title: "Computer",
-        link: "../pages/Roadmap/Comp.js",
-      },
-      {
-        title: "IT",
-        link: "../pages/Roadmap/it.js",
-      },
-      {
-        title: "Electronics and Telecommunication",
-        link: "../pages/Roadmap/Entc.js",
-      },
-    ],
+    title: "Department",
+    link: "/department",
   },
   {
-    title: "Resources",
-    link: "/resources",
+    title: "RoadMaps",
+    link: "/roadmap",
   },
   {
     title: "Contact Us",
-    link: "/contact",
+    link: "/",
   },
 ];
 
@@ -44,15 +30,15 @@ const Navbar = () => {
   return (
     <div className="bg-gray-700">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-2 h-16">
-          <div className="flex items-center">
-            <a href="/" className="text-white py-3 hover:scale-110">
+        <div className="flex items-centre justify-between py-2 h-16">
+          <div className="flex item-baseline">
+            <a href="" className="text-white my-3 hover:scale-110" >
               CODING CIRCLE
             </a>
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 my-3">
               {navlinks.map((link, index) => (
                 <div
                   key={index}
@@ -61,7 +47,7 @@ const Navbar = () => {
                   {link.sublinks ? (
                     <>
                       <button
-                        className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium focus:outline-none"
+                        className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white mx-3 py-3 rounded-md text-md font-medium focus:outline-none"
                       >
                         {link.title}
                       </button>
@@ -70,7 +56,7 @@ const Navbar = () => {
                           <a
                             key={subindex}
                             href={sublink.link}
-                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 rounded-md"
+                            className="block px-4 py-4 text-sm text-gray-300 hover:bg-gray-600 rounded-md"
                           >
                             {sublink.title}
                           </a>
@@ -79,7 +65,7 @@ const Navbar = () => {
                     </>
                   ) : (
                     <a
-                      className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                      className="text-gray-400 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-4 rounded-md text-md font-medium"
                       href={link.link}
                       key={index}
                     >
