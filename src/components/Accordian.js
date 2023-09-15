@@ -83,7 +83,6 @@ const accordionItems = [
     title: 'Step 6: Topics to Learn - Set 2',
     content: (
       <>
-        <h2 className="text-lg font-semibold mb-2">Topics to Learn - Set 2</h2>
         <p>• Recursion</p>
         <p>• Number Theory: Sieve of Eratosthenes, Modular Arithmetic</p>
         <p>• Binary Search on Answers</p>
@@ -123,13 +122,6 @@ const Accordion = ({ title, content }) => {
     setIsOpen(!isOpen);
   };
 
-  const Footer = () => {
-    return (
-      <footer className="bg-gray-900 text-white text-center py-8">
-        <p>&copy; 2023 Coding Circle. All rights reserved.</p>
-      </footer>
-    );
-  };
   return (
     <div className="w-2/4 mx-auto mt-4">
       <div className={`border rounded-lg shadow-md mb-4 overflow-hidden ${isOpen ? 'bg-gradient-to-r from-teal-400 to-cyan-500' : 'bg-white'} transition-all duration-300 ease-in-out`}>

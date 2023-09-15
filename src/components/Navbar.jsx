@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-centre justify-between py-2 h-16">
           <div className="flex item-centre">
-            <a href="/" className="text-white py-3 hover:scale-110" >
+            <a href="" className="text-white py-3 hover:scale-110" >
               CODING CIRCLE
             </a>
           </div>

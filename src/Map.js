@@ -1,5 +1,6 @@
 import React from 'react'
 import { Accordion,accordionItems } from './components/Accordian'
+
 export default function Map() {
   return (
     <div>
