@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .neon-border {
   animation: neon-border 1.5s alternate infinite;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(45deg, rgb(164, 232, 100), #9f6, rgb(164, 232, 100), #9f6);
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(164, 232, 100),
+    #9f6,
+    rgb(164, 232, 100),
+    #9f6
+  );
 }
-
 
 .neon-text {
   animation: neon-text 1.5s alternate infinite;
@@ -27,7 +30,13 @@
   animation: neon-border 1.5s alternate infinite;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(45deg, rgb(164, 232, 100), #9f6, rgb(164, 232, 100), #9f6);
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(164, 232, 100),
+    #9f6,
+    rgb(164, 232, 100),
+    #9f6
+  );
 }
 
 /* Neon effect for the text */
@@ -40,11 +49,23 @@
 /* Animation for border */
 @keyframes neon-border {
   0% {
-    border-image-source: linear-gradient(45deg, rgb(212, 239, 199), #9f6, rgb(212, 239, 199), #9f6);
+    border-image-source: linear-gradient(
+      45deg,
+      rgb(212, 239, 199),
+      #9f6,
+      rgb(212, 239, 199),
+      #9f6
+    );
   }
 
   100% {
-    border-image-source: linear-gradient(45deg, #9f6, rgb(212, 239, 199), #9f6, rgb(212, 239, 199));
+    border-image-source: linear-gradient(
+      45deg,
+      #9f6,
+      rgb(212, 239, 199),
+      #9f6,
+      rgb(212, 239, 199)
+    );
   }
 }
 
@@ -72,7 +93,7 @@
   /* text-align: center; */
   padding: 12px;
   /* Add padding for spacing */
-  
+
   /* Add a background color for contrast */
   border-radius: 5px;
   /* Add rounded corners for a card-like appearance */

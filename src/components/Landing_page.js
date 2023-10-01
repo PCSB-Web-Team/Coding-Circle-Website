@@ -1,5 +1,6 @@
 import React from "react";
-
+import img1 from "../assets/images/image_01.png";
+import img4 from "../assets/images/img_04.png";
 const Landing_page = () => {
   return (
     <div class="bg-gray-800 text-white">
@@ -48,7 +49,7 @@ const Landing_page = () => {
         <div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-white border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
           <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
-              src="https://cdn.devdojo.com/images/december2020/settings.png"
+              src={img1}
               class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 "
             />
           </div>
@@ -62,21 +63,21 @@ const Landing_page = () => {
             </p>
             <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 DSA is foundational for efficient data organization and
                 problem-solving in computer science.
               </li>
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 Optimization through proper data structures and algorithms is
                 key to program efficiency.
               </li>
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 DSA is essential for problem-solving in software development and
@@ -96,21 +97,21 @@ const Landing_page = () => {
             </p>
             <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 Various programming languages like Python, Java, and C++ serve
                 different purposes.
               </li>
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 CP involves coding, testing, and debugging to create software
                 applications.
               </li>
               <li class="box-border relative py-1 pl-0 text-left text-white-500 border-solid">
-                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-orange-300 rounded-full">
                   <span class="text-sm font-bold">✓</span>
                 </span>
                 Continuous learning is vital in CP to adapt to evolving
@@ -121,8 +122,8 @@ const Landing_page = () => {
 
           <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
             <img
-              src="https://cdn.devdojo.com/images/december2020/settings.png"
-              class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32"
+              src={img4}
+              class="pl-4 sm:pr-10 "
             />
           </div>
         </div>
@@ -212,10 +213,10 @@ const Landing_page = () => {
         </div>
       </section>
 
-      <section class="flex items-center justify-center py-20  min-w-screen">
+      <section class="flex items-center justify-center py-24  min-w-screen">
         <div class="px-16 ">
           <div class="container flex flex-col items-start mx-auto lg:items-center">
-            <p class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">
+            <p class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center py-2">
               Don't just take our word for it
             </p>
 
@@ -230,58 +231,58 @@ const Landing_page = () => {
               </svg>
               See what Programmers are saying
             </h2>
-            <div class="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+            <div class="py-4"></div>
 
             <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
               <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
                 <div class="flex items-center justify-center">
                   <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
                     <img
-                      src="https://media.licdn.com/dms/image/D4D35AQHatC3171UG9Q/profile-framedphoto-shrink_400_400/0/1689487574366?e=1695578400&v=beta&t=kIkvW5XyhmJxIaB1D_2PHSmhWONIl2i9behLz2C7Pbg"
+                      src="https://media.licdn.com/dms/image/D4D03AQHGNAxeyJhZbQ/profile-displayphoto-shrink_800_800/0/1685972234997?e=2147483647&v=beta&t=S6Tkhgi5R2k9mPdJtznecFfs65DNnZCtgLiSpdJxkzI"
                       class="object-cover w-full h-full"
                     />
                   </div>
                   <div class="flex flex-col items-start justify-center">
-                    <h4 class="font-bold text-white-800">Tanisha</h4>
-                    <p class="text-white-600">Director at Coding Circle</p>
+                    <h4 class="font-bold text-white-800">Shradha Khapra </h4>
+                    <p class="text-white-600">Co-founder, Apna College </p>
                   </div>
                 </div>
                 <blockquote class="mt-8 text-lg text-white-500">
-                  "Coding like poetry should be short and concise."
+                  "Being curious in College keeps us moving forward, exploring and opening new doors"
                 </blockquote>
               </div>
               <div class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
                 <div class="flex items-center justify-center">
                   <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
                     <img
-                      src="https://media.licdn.com/dms/image/D4D35AQHatC3171UG9Q/profile-framedphoto-shrink_400_400/0/1689487574366?e=1695578400&v=beta&t=kIkvW5XyhmJxIaB1D_2PHSmhWONIl2i9behLz2C7Pbg"
+                      src="https://media.licdn.com/dms/image/C4D03AQGFTnOaQa4fUQ/profile-displayphoto-shrink_800_800/0/1623400653670?e=1701302400&v=beta&t=tVs6rGXnJ3GWRLGDedZOqxXs3eDHH_4qzZw7sS9kXdY"
                       class="object-cover w-full h-full"
                     />
                   </div>
                   <div class="flex flex-col items-start justify-center">
-                    <h4 class="font-bold text-white-800">Tanisha</h4>
-                    <p class="text-white-600">Director at Coding Circle</p>
+                    <h4 class="font-bold text-white-800">Raj Vikramaditya</h4>
+                    <p class="text-white-600">Works at Google</p>
                   </div>
                 </div>
                 <blockquote class="mt-8 text-lg text-white-500">
-                  "It’s not a bug; it’s an undocumented feature"
+                  "Don't cry in a corner , If you want something , Mehnat kar , Best ban aur Cheen le "
                 </blockquote>
               </div>
               <div class="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
                 <div class="flex items-center justify-center">
                   <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
                     <img
-                      src="https://media.licdn.com/dms/image/D4D35AQHatC3171UG9Q/profile-framedphoto-shrink_400_400/0/1689487574366?e=1695578400&v=beta&t=kIkvW5XyhmJxIaB1D_2PHSmhWONIl2i9behLz2C7Pbg"
+                      src="https://media.licdn.com/dms/image/C4D03AQFiExHrbotsqQ/profile-displayphoto-shrink_800_800/0/1640675476658?e=2147483647&v=beta&t=gDtWXU4PnxSiI9f5w-Q8HNKAuReDfCi2IpU6XQoNVZQ"
                       class="object-cover w-full h-full"
                     />
                   </div>
                   <div class="flex flex-col items-start justify-center">
-                    <h4 class="font-bold text-white-800">Tanisha</h4>
-                    <p class="text-white-600">Director at Coding Circle</p>
+                    <h4 class="font-bold text-white-800">Arsh Goyal</h4>
+                    <p class="text-white-600">Works at Samsung</p>
                   </div>
                 </div>
                 <blockquote class="mt-8 text-lg text-white-500">
-                  "First, solve the problem. Then, write the code"
+                  "Becoming a skilled coder is a journey that requires time and consistency. "
                 </blockquote>
               </div>
             </div>

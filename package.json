@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-flow-renderer": "^10.3.17",
     "react-icons": "^4.11.0",
+    "react-id-swiper": "^4.0.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
@@ -28,6 +29,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "reactflow": "^11.8.3",
     "redux": "^4.2.1",
+    "swiper": "^10.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
